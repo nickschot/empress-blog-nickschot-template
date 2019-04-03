@@ -1,274 +1,103 @@
-<div class="container-fluid">
-  <div class="row entry">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-lg-10 col-lg-push-1 text-center">
-          <div class="row profile-box">
-            <div class="col-xs-12 col-sm-5">
-              <img src="/images/emberconf_profilepic.jpg">
-            </div>
-            <div class="col-xs-10 col-sm-7 profile-box-text">
-              <div class="hello hidden-print">
-                <span>Hello<span>.</span></span>
-              </div>
-              <div class="me">
-                <h1>Nick Schot</h1>
-                <span>Developer</span>
-              </div>
-            </div>
+<div class="bg-teal text-white flex justify-center">
+
+  <Greeter/>
+
+  <a class="scroll-down hidden-print">
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="entry-bar hidden-print">
+  <a><i class="fa fa-caret-up"></i></a>
+</div>
+
+<div class="container mt-32">
+  <h2 class="uppercase text-center text-5xl font-light">~% whoami</h2>
+  <div class="flex flex-wrap">
+    <div class="w-full sm:w-1/2 border-b-4 border-solid border-grey bg-white p-8">
+      <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">About</h3>
+
+      <div class="about-horizontal">
+        <div class="row">
+          <div>Name:</div>
+          <div>Nick Schot</div>
+        </div>
+        <div class="row">
+          <div>Education:</div>
+          <div>Computer Science BSc</div>
+        </div>
+        <div class="row">
+          <div>Occupation:</div>
+          <div>
+            <ul>
+              <li>Co-founder at Webhub</li>
+            </ul>
           </div>
-          <div class="row hidden-print">
-            <div class="sm-links">
-              <ul>
-                <li class="github"><a href="https://github.com/nickschot" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li class="facebook"><a href="https://www.facebook.com/nickschot" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="twitter"><a href="https://twitter.com/nickschot" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/nick-schot-4936a030" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="row">
+          <div>About me:</div>
+          <div>
+            <ul>
+              <li>Passionate <b>web developer</b> from The Netherlands.</li>
+              <li>Creator of <b>innovative</b> web applications.</li>
+              <li>Frontend/client-side applications are a specialty.</li>
+              <li>Turning coffee into code since 2008.</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <a class="scroll-down hidden-print">
-      <i class="fa fa-angle-down" aria-hidden="true"></i>
-    </a>
-  </div>
-  <div class="entry-bar hidden-print">
-    <a><i class="fa fa-caret-up"></i></a>
-  </div>
-  <div class="row about">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="text-uppercase">~% whoami</h2>
-        </div>
-      </div>
-      <div class="row row-flex row-flex-wrap cards">
-        <div class="col-xs-12 col-md-6">
-          <div class="card about">
-            <h3>About</h3>
-
-            <img src="/images/emberconf_profilepic.jpg">
-
-            <div class="about-horizontal">
-              <div class="row">
-                <div>Name:</div>
-                <div>Nick Schot</div>
-              </div>
-              <div class="row">
-                <div>Education:</div>
-                <div>Computer Science BSc</div>
-              </div>
-              <div class="row">
-                <div>Occupation:</div>
-                <div>
-                  <ul>
-                    <li>Software Technology master at University of Twente</li>
-                    <li>Co-founder at Webhub</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div>About me:</div>
-                <div>
-                  <ul>
-                    <li>Passionate <b>web developer</b> from The Netherlands.</li>
-                    <li>Creator of <b>innovative</b> web applications.</li>
-                    <li>Frontend/client-side applications are a specialty.</li>
-                    <li>Turning coffee into code since 2008.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="card skills">
-            <h3>Skills</h3>
-            <div class="row">
-              <div class="col-xs-6 programming">
-                <h4>Development</h4>
+    <div class="w-full sm:w-1/2">
+      <div class="card skills">
+        <h3>Skills</h3>
+        <div class="row">
+          <div class="col-xs-6 programming">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5/(S)CSS</li>
+              <li>JavaScript
                 <ul>
-                  <li>HTML5/(S)CSS</li>
-                  <li>JavaScript
-                    <ul>
-                      <li><a class="fancy" href="http://emberjs.com/" target="_blank">Ember.js</a></li>
-                      <li><a class="fancy" href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
-                      <li><a class="fancy" href="http://electron.atom.io/" target="_blank">Electron</a></li>
-                    </ul>
-                  </li>
-                  <li>PHP</li>
-                  <li>Databases
-                    <ul>
-                      <li><a class="fancy" href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
-                      <li><a class="fancy" href="https://www.mysql.com/" target="_blank">MySQL</a>/<a class="fancy" href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
-                    </ul>
-                  </li>
+                  <li><a class="fancy" href="http://emberjs.com/" target="_blank">Ember.js</a></li>
+                  <li><a class="fancy" href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                  <li><a class="fancy" href="http://electron.atom.io/" target="_blank">Electron</a></li>
                 </ul>
-              </div>
-              <div class="col-xs-6 interests">
-                <h4>Interests</h4>
+              </li>
+              <li>PHP</li>
+              <li>Databases
                 <ul>
-                  <li>Web application development</li>
-                  <li>Smooth & modern user experiences</li>
-                  <li>Client side applications</li>
+                  <li><a class="fancy" href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+                  <li><a class="fancy" href="https://www.mysql.com/" target="_blank">MySQL</a>/<a class="fancy" href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
                 </ul>
-              </div>
-            </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 interests">
+            <h4>Interests</h4>
+            <ul>
+              <li>Web application development</li>
+              <li>Smooth & modern user experiences</li>
+              <li>Client side applications</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row timeline">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="text-uppercase">Timeline</h2>
-          <div class="row hidden-print">
-            <div class="col-xs-12">
-              <div class="timeline-controls">
-                <a class="study-btn">Study related</a><a class="work-btn">Work related</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row hidden-print">
-            <div class="col-xs-12">
-              <div class="timeline-head"></div>
-            </div>
-          </div>
-
-          <!-- START TIMELINE CONTENT -->
-          <div class="timeline-items">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit left study future">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Graduate <small>Software Technology MSc</small></h3>
-                      <span class="timeline-unit-header-date"><small>2018</small></span>
-                    </div>
-                    <p>Planned graduation of my Computer Science Software Technology master at the <b>University of Twente</b>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row hidden-print">
-              <div class="col-xs-12">
-                <div class="timeline-now"></div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit left study">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Started Software Technology master</h3>
-                      <span class="timeline-unit-header-date"><small>September 2015</small></span>
-                    </div>
-                    <p>Started with the Computer Science Software Technology master at the <b>University of Twente</b>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit left study">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Graduated <small>Computer Science BSc</small></h3>
-                      <span class="timeline-unit-header-date"><small>August 2015</small></span>
-                    </div>
-                    <p>Graduated for the Computer Science bachelor education at the <b>University of Twente</b>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit right work">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Stopped as secretary at Inter-<i>Actief</i></h3>
-                      <span class="timeline-unit-header-date"><small>September 2014</small></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit right work">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Started as secretary at Inter-<i>Actief</i></h3>
-                      <span class="timeline-unit-header-date"><small>September 2013</small></span>
-                    </div>
-                    <p><b>Inter-<i>Actief</i></b> is the study association for Computer Science at the University of Twente.</p>
-                    <div><i class="fa fa-link" aria="hidden"></i> <a class="fancy" href="https://www.inter-actief.utwente.nl" target="_blank">https://www.inter-actief.utwente.nl</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit right work">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Co-founded Webhub</h3>
-                      <span class="timeline-unit-header-date"><small>January 2012</small></span>
-                    </div>
-                    <p><b>Webhub</b> is a small software company building innovative <i>web applications</i> and <i>websites</i>.</p>
-                    <div><i class="fa fa-link" aria="hidden"></i> <a class="fancy" href="http://webhub.nl/">http://webhub.nl/</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="timeline-unit left study">
-                  <div class="timeline-box">
-                    <div class="timeline-unit-header">
-                      <h3>Started <small>Computer Science bachelor</small></h3>
-                      <span class="timeline-unit-header-date"><small>September 2010</small></span>
-                    </div>
-                    <p>Started with the Computer Science bachelor education at the <b>University of Twente</b>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END TIMELINE CONTENT -->
-
-          <div class="row hidden-print">
-            <div class="col-xs-12">
-              <div class="timeline-tail"> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row footer">
-    <div class="row hidden-print">
-      <div class="sm-links">
-        <ul>
-          <li class="github"><a href="https://github.com/nickschot" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li class="facebook"><a href="https://www.facebook.com/nickschot" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li class="twitter"><a href="https://twitter.com/nickschot" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li class="linkedin"><a href="https://www.linkedin.com/in/nick-schot-4936a030" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-center">&copy; 2016 &ndash; Nick Schot</div>
   </div>
 </div>
+
+<Timeline as |t|>
+  <t.Now />
+
+  <t.Unit>
+    <div class="timeline-unit-header">
+      <h3>Started as secretary at Inter-<i>Actief</i></h3>
+      <span class="timeline-unit-header-date"><small>September 2013</small></span>
+    </div>
+    <p><b>Inter-<i>Actief</i></b> is the study association for Computer Science at the University of Twente.</p>
+    <div><i class="fa fa-link" aria="hidden"></i> <a class="fancy" href="https://www.inter-actief.utwente.nl" target="_blank">https://www.inter-actief.utwente.nl</a></div>
+  </t.Unit>
+
+  <t.Unit>
+
+  </t.Unit>
+</Timeline>

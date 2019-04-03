@@ -1,27 +1,25 @@
-    <header class="site-head">
-        <div class="site-head-container">
-            <nav id="swup" class="site-head-left">
-                <Navigation />
-            </nav>
-            <div class="site-head-center">
-                {{#if @site.logo}}
-                <a class="site-head-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-                {{else}}
-                <a class="site-head-logo" href="{{@site.url}}">{{@site.title}}</a>
+    <header class="absolute w-full pin-t bg-transparent text-white">
+        <nav class="container mx-auto py-3">
+            <Navigation />
+        </nav>
+        <div class="site-head-center">
+            {{#if @site.logo}}
+            <a class="site-head-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+            {{else}}
+            <a class="site-head-logo" href="{{@site.url}}">{{@site.title}}</a>
+            {{/if}}
+        </div>
+        <div class="site-head-right">
+            <div class="social-links">
+                {{#if @site.facebook}}
+                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">Facebook</a>
                 {{/if}}
-            </div>
-            <div class="site-head-right">
-                <div class="social-links">
-                    {{#if @site.facebook}}
-                    <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">Facebook</a>
-                    {{/if}}
-                    {{#if @site.twitter}}
-                    <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">Twitter</a>
-                    {{/if}}
-                    {{#if blog.host}}
-                    <a href={{concat "https://feedly.com/i/subscription/feed/" (encode blog.host) '/rss.xml'}} title="RSS" target="_blank" rel="noopener">RSS</a>
-                    {{/if}}
-                </div>
+                {{#if @site.twitter}}
+                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">Twitter</a>
+                {{/if}}
+                {{#if blog.host}}
+                <a href={{concat "https://feedly.com/i/subscription/feed/" (encode blog.host) '/rss.xml'}} title="RSS" target="_blank" rel="noopener">RSS</a>
+                {{/if}}
             </div>
         </div>
     </header>
@@ -35,5 +33,18 @@
 
     {{!-- The footer at the very bottom of the screen --}}
     <footer class="site-foot">
-        &copy; {{date format="YYYY"}} {{#link-to 'index'}}{{blog.title}}{{/link-to}} &mdash; Published with <a href="https://github.com/empress/empress-blog" target="_blank" rel="noopener">empress-blog</a>
+
+        <div class="row hidden-print">
+          <div class="sm-links">
+            <ul>
+              <li class="github"><a href="https://github.com/nickschot" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/nickschot" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/nickschot" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/in/nick-schot-4936a030" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">&copy; 2016-{{date format="YYYY"}} &ndash; Nick Schot</div>
+
+        {{#link-to 'index'}}{{blog.title}}{{/link-to}} &mdash; Published with <a href="https://github.com/empress/empress-blog" target="_blank" rel="noopener">empress-blog</a>
     </footer>

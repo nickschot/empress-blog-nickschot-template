@@ -1,0 +1,36 @@
+<div class="timeline" ...attributes>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-uppercase">Timeline</h2>
+        <div class="row hidden-print">
+          <div class="col-xs-12">
+            <div class="timeline-controls">
+              <a class="study-btn">Study related</a><a class="work-btn">Work related</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hidden-print">
+          <div class="col-xs-12">
+            <div class="timeline-head"></div>
+          </div>
+        </div>
+
+        <div class="timeline-items">
+
+          {{yield (hash
+              Now=(component "timeline/now")
+              Unit=(component "timeline/unit")
+          )}}
+        </div>
+
+        <div class="row hidden-print">
+          <div class="col-xs-12">
+            <div class="timeline-tail"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

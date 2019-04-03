@@ -1,12 +1,12 @@
-<ul class="nav" role="menu">
+<ul class="list-reset flex justify-end" role="menu">
     {{#each blog.navigation as |navigation|}}
-      <li class="{{if (route-is navigation.route) 'nav-current'}}" role="menuitem">
+      <li class="mr-6 {{if (route-is navigation.route) 'nav-current'}}" role="menuitem">
         {{#if navigation.id}}
-          {{#link-to navigation.route navigation.id}} {{navigation.label}} {{/link-to}}
+          {{#link-to navigation.route navigation.id class="text-teal-lighter hover:text-white no-underline"}} {{navigation.label}} {{/link-to}}
         {{else if navigation.route}}
-          {{#link-to navigation.route}} {{navigation.label}} {{/link-to}}
+          {{#link-to navigation.route class="text-teal-lighter hover:text-white no-underline"}} {{navigation.label}} {{/link-to}}
         {{else if navigation.link}}
-          <a href="{{navigation.link}}"> {{navigation.label}} </a>
+          <a href="{{navigation.link}}" class="text-teal-lighter hover:text-white no-underline"> {{navigation.label}} </a>
         {{/if}}
       </li>
     {{/each}}

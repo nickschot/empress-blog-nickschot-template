@@ -23,6 +23,7 @@
   "dependencies": {
     "ember-cli-babel": "^7.1.2",
     "ember-cli-htmlbars": "^3.0.1",
+    "ember-cli-tailwind": "^0.7.0",
     "ember-composable-helpers": "^2.2.0",
     "ember-moment": "^7.8.1"
   },

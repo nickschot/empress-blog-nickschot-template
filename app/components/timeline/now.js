@@ -1,0 +1,1 @@
+export { default } from 'empress-blog-nickschot-template/components/timeline/now';

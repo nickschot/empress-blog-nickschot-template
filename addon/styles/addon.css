@@ -1,1 +1,5 @@
-@import "screen.css";
+@import 'tailwind.css';
+
+body {
+  background: #dae1e7;
+}
