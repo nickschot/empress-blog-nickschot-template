@@ -1,11 +1,27 @@
 {{!--
 Re-usable card for linking to posts
 --}}
-
-<article class="post-card {{post_class}} {{if @post.image 'with-image' 'no-image'}}" style={{computedStyle}}>
+<article class="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col" style="min-height: 27.5rem;">
+  {{#if @post.image}}
     {{#link-to 'post' @post.id}}
-        <div class="post-card-content">
-            <h2 class="post-card-title">{{@post.title}}</h2>
-        </div>
+      <div style={{computedStyle}} class="bg-center bg-no-repeat bg-cover h-64"></div>
     {{/link-to}}
+  {{/if}}
+
+  {{#link-to 'post' @post.id class="no-underline"}}
+    <div class="px-6 pt-4">
+      <h2 class="font-bold text-xl mb-2 etw-text-black">{{@post.title}}</h2>
+    </div>
+    <section class="text-grey-darker text-sm px-6">
+      <p>{{excerpt @post.html words="33"}}</p>
+    </section>
+  {{/link-to}}
+
+  <div class="px-6 py-4 mt-auto">
+    {{#each @post.tags as |tag|}}
+      {{#link-to 'tag' tag class="inline-block bg-grey-lighter hover:bg-teal rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 no-underline hover:text-teal-lighter "}}
+        #{{tag}}
+      {{/link-to}}
+    {{/each}}
+  </div>
 </article>
