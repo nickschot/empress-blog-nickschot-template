@@ -1,7 +1,7 @@
 {{!--
 Re-usable card for linking to posts
 --}}
-<article class="max-w-sm rounded overflow-hidden shadow-lg bg-white flex flex-col" style="min-height: 27.5rem;">
+<article class="rounded overflow-hidden shadow-md hover:shadow-lg bg-white flex flex-col transition hover:scale-101" style="min-height: 27.5rem;" ...attributes>
   {{#if @post.image}}
     {{#link-to 'post' @post.id}}
       <div style={{computedStyle}} class="bg-center bg-no-repeat bg-cover h-64"></div>
