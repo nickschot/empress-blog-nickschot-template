@@ -7,9 +7,9 @@ export default Component.extend({
 
   computedClasses: computed('type', function(){
     if(this.type === 'right'){
-      return `pl-5 ml-auto`;
+      return `timeline-unit--right`;
     } else {
-      return `pr-5`;
+      return `timeline-unit--left`;
     }
   })
 });

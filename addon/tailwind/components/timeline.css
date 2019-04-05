@@ -1,0 +1,59 @@
+@keyframes timeline-wobble {
+  0% {
+    height: 0.75rem;
+  }
+  50% {
+    height: 3.5rem;
+  }
+  100% {
+    height: 0.75rem;
+  }
+}
+
+.timeline-head, .timeline-tail {
+  @apply .relative .border-solid .mx-auto .mb-10 .rounded-full;
+
+  height: 2.125rem;
+  width: 2.125rem;
+  border-width: 10px;
+  border-color: #888;
+}
+
+.timeline-head::before, .timeline-tail::before {
+  @apply .absolute;
+
+  background: #888;
+  content: '';
+  top: 1.375rem;
+  left: 0.1rem;
+  width: 10px;
+  height: 2.75rem;
+}
+
+.timeline-tail {
+  @apply .bg-teal .border-teal;
+}
+.timeline-tail::before {
+  @apply .bg-teal;
+
+  top: auto;
+  bottom: 1.375rem;
+}
+
+.timeline-now {
+  @apply .relative .mx-auto;
+
+  width: 10px;
+  height: 3.5rem;
+  background: #888;
+}
+
+.timeline-now::after {
+  @apply .absolute .pin-b .pin-l .bg-teal;
+
+  content: '';
+  width: 10px;
+  height: 2.125rem;
+
+  animation: timeline-wobble 5s cubic-bezier(0.860, 0, 0.070, 1.000) infinite;
+}

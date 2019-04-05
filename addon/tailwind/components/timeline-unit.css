@@ -1,0 +1,68 @@
+.timeline-unit {
+  @apply .relative .w-1/2 .py-10;
+}
+
+.timeline-unit::before {
+  @apply .absolute .pin-t .bg-teal .h-full;
+
+  content: '';
+  width: 10px;
+}
+
+.timeline-unit--left {
+  @apply .pr-5;
+}
+
+.timeline-unit--right {
+  @apply .pl-5 .ml-auto;
+}
+
+.timeline-unit--left::before {
+  right: -5px;
+}
+
+.timeline-unit--right::before {
+  left: -5px;
+}
+
+.timeline-box {
+  @apply .p-8 .bg-white .border-b-4 .border-grey .border-solid;
+}
+
+.timeline-box::after {
+  @apply .absolute;
+
+  content: '';
+  top: calc(50% - 1.25rem);
+  height: 0;
+  width: 0;
+  line-height: 0;
+  border-top: 1.25rem solid transparent;
+  border-bottom: 1.25rem solid transparent;
+}
+
+.timeline-unit--left .timeline-box::after {
+  right: 0;
+  border-left: 1.25rem solid #FFF;
+}
+
+.timeline-unit--right .timeline-box::after {
+  left: 0;
+  border-right: 1.25rem solid #FFF;
+}
+
+.timeline-unit-header {
+  @apply .text-right .font-light .mb-5;
+}
+
+.timeline-unit-header h3 {
+  @apply .text-2xl .mb-0 .font-light;
+}
+
+.timeline-unit-header-date {
+  @apply .text-2xl;
+}
+
+.timeline-unit-body {
+  @apply .pt-5 .mb-3 .border-solid .border-t .border-grey-light;
+}
