@@ -1,0 +1,42 @@
+.social-icons {
+  @apply .list-reset .inline-flex .justify-center;
+}
+
+.social-icons:hover li a:not(:hover){
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.social-icon {
+  position: relative;
+}
+
+.social-icon:hover {
+  z-index: 2;
+}
+
+.social-icon a {
+  @apply .block .text-white .text-2xl .flex .justify-center .items-center .opacity-75 .transition .cursor-pointer;
+
+  margin: 1px;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  will-change: opacity, transform, filter;
+}
+
+.social-icon a:hover {
+  @apply .opacity-100;
+
+  transform: scale(1.25);
+}
+
+.social-icon.github a {
+  background: #333;
+}
+.social-icon.twitter a {
+  background: #1DA1F2;
+}
+.social-icon.linkedin a {
+  background: #0077B5;
+}
