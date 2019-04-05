@@ -1,22 +1,26 @@
 
 {{#let model.tag as |tag|}}
-<header class="page-head">
-    <h1 class="page-head-title">{{tag}}</h1>
-    <p class="page-head-description">
-        {{#if tag.description}}
-            {{tag.description}}
-        {{else}}
-            A collection of {{plural model.posts.length empty='posts' singular='% post' plural='% posts'}}
-        {{/if}}
-    </p>
-</header>
+  <header class="h-64 bg-teal text-center flex flex-col justify-center align-middle -mt-16 mb-4 text-white">
+      <h1 class="font-light text-5xl mb-3">{{tag}}</h1>
+      <p class="text-2xl font-light">
+          {{#if tag.description}}
+              {{tag.description}}
+          {{else}}
+              A collection of {{plural model.posts.length empty='posts' singular='% post' plural='% posts'}}
+          {{/if}}
+      </p>
+  </header>
 {{/let}}
 
-<div class="post-feed">
-{{#each model.posts as |post|}}
-
-    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-    <PostCard @post={{post}} />
-
-{{/each}}
+<div class="container mx-auto">
+  <div class="px-5">
+    <div class="flex flex-wrap -mx-10">
+      {{#each model.posts as |post|}}
+        <div class="w-1/2 xl:w-1/3 p-5">
+          {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+          <PostCard @post={{post}} class="h-full w-full"/>
+        </div>
+      {{/each}}
+    </div>
+  </div>
 </div>

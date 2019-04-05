@@ -1,7 +1,7 @@
 {{!--
 Re-usable card for linking to posts
 --}}
-<article class="rounded overflow-hidden shadow-md hover:shadow-lg bg-white flex flex-col transition hover:scale-101" style="min-height: 27.5rem;" ...attributes>
+<article class="rounded overflow-hidden shadow-md hover:shadow-lg bg-white flex flex-col transition" style="min-height: 27.5rem;" ...attributes>
   {{#if @post.image}}
     {{#link-to 'post' @post.id}}
       <div style={{computedStyle}} class="bg-center bg-no-repeat bg-cover h-64"></div>
@@ -13,7 +13,7 @@ Re-usable card for linking to posts
       <h2 class="font-bold text-xl mb-2 etw-text-black">{{@post.title}}</h2>
     </div>
     <section class="text-grey-darker text-sm px-6">
-      <p>{{excerpt @post.html words="33"}}</p>
+      <p class="mb-0">{{excerpt @post.html words="33"}}&hellip;</p>
     </section>
   {{/link-to}}
 

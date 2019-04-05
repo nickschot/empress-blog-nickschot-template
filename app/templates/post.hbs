@@ -1,35 +1,35 @@
 
-{{#let model.post as |post|}}
-<article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
+<div class="container mx-auto">
+  {{#let model.post as |post|}}
+    <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
 
-    <header class="post-content-header">
-        <h1 class="post-content-title">{{post.title}}</h1>
-    </header>
+      <header class="text-center py-8 mt-10">
+        <h1 class="text-5xl font-light">{{post.title}}</h1>
+      </header>
 
-    {{#if post.image}}
-    <div class="post-content-image">
-        <img class="kg-image" src={{post.image}} alt={{title}} />
-    </div>
-    {{/if}}
+      {{#if post.image}}
+        <img class="block rounded-lg" src={{post.image}} alt={{title}} />
+      {{/if}}
 
-    <div class="post-content-body">
+      <div class="bg-white border-b-4 border-grey border-solid p-24 -mt-32 mx-24 relative z-10 text-2xl font-light leading-normal">
         {{markdown-to-html post.content tagName=""}}
-    </div>
+      </div>
 
-    <footer class="post-content-footer">
+      <footer class="post-content-footer">
 
         {{!-- There are two options for how we display the byline/author-info.
         If the post has more than one author, we load a specific template
         from includes/byline-multiple.hbs, otherwise, we just use the
         default byline. --}}
 
-    </footer>
+      </footer>
 
-    {{!--
-    <section class="post-content-comments">
-        If you want to embed comments, this is a good place to do it!
-    </section>
-    --}}
+      {{!--
+      <section class="post-content-comments">
+          If you want to embed comments, this is a good place to do it!
+      </section>
+      --}}
 
-</article>
-{{/let}}
+    </article>
+  {{/let}}
+</div>
