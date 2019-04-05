@@ -34,11 +34,7 @@
     {{!-- The footer at the very bottom of the screen --}}
     <footer class="text-center py-16">
       <div class="mx-auto mb-10 border-solid border-t border-grey pt-10" style="width:20rem">
-        <ul class="social-icons">
-          <li class="social-icon github"><a href="https://github.com/nickschot" target="_blank"><FaIcon @icon="github" @prefix="fab"/></a></li>
-          <li class="social-icon twitter"><a href="https://twitter.com/nickschot" target="_blank"><FaIcon @icon="twitter" @prefix="fab"/></a></li>
-          <li class="social-icon linkedin"><a href="https://www.linkedin.com/in/nick-schot-4936a030" target="_blank"><FaIcon @icon="linkedin" @prefix="fab"/></a></li>
-        </ul>
+        <SocialIcons/>
       </div>
       <span class="text-center text-grey-darker font-light text-lg">&copy; 2016-{{date format="YYYY"}} &ndash; Nick Schot</span>
     </footer>
