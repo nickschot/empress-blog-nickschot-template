@@ -52,7 +52,11 @@
 }
 
 .timeline-unit-header {
-  @apply .text-right .font-light .mb-5;
+  @apply .font-light .mb-1;
+}
+
+.timeline-unit--left .timeline-unit-header {
+  @apply .text-right;
 }
 
 .timeline-unit-header h3 {
