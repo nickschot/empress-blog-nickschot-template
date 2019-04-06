@@ -1,0 +1,18 @@
+@keyframes fade-up-social-icons {
+  from    { visibility: visible; opacity: 0; transform: translateY(1rem); }
+  to      { visibility: visible; opacity: 1; transform: translateY(0); }
+}
+
+.greeter .social-icon {
+  @apply .opacity-0 .invisible;
+
+  animation-name: fade-up-social-icons;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.greeter .social-icon.github    { animation-delay: 5s; }
+.greeter .social-icon.twitter   { animation-delay: 5.1s; }
+.greeter .social-icon.linkedin  { animation-delay: 5.2s; }
+

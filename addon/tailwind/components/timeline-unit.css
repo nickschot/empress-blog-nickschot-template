@@ -27,6 +27,8 @@
 
 .timeline-box {
   @apply .relative .p-8 .bg-white .border-b-4 .border-grey .border-solid;
+
+  max-width: 27.5rem;
 }
 
 .timeline-box::after {
@@ -39,6 +41,10 @@
   line-height: 0;
   border-top: 1.25rem solid transparent;
   border-bottom: 1.25rem solid transparent;
+}
+
+.timeline-unit--left .timeline-box {
+  @apply .ml-auto;
 }
 
 .timeline-unit--left .timeline-box::after {

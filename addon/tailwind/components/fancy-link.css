@@ -1,0 +1,7 @@
+.fancy-link {
+  @apply .no-underline .text-teal .rounded .px-1 .transition;
+}
+
+.fancy-link:hover {
+  @apply .text-white .bg-teal;
+}

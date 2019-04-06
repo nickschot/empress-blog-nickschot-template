@@ -8,7 +8,7 @@
 }
 
 .social-icon {
-  position: relative;
+  @apply .relative;
 }
 
 .social-icon:hover {
