@@ -28,8 +28,9 @@
     "ember-cli-htmlbars": "^3.0.1",
     "ember-cli-tailwind": "^0.7.0",
     "ember-composable-helpers": "^2.2.0",
+    "ember-in-viewport": "^3.3.0",
     "ember-moment": "^7.8.1",
-    "ember-in-viewport": "^3.3.0"
+    "ember-set-body-class": "^0.4.2"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",

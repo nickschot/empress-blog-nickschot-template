@@ -3,15 +3,15 @@
   {{#let model.post as |post|}}
     <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
 
-      <header class="text-center py-8 mt-10">
+      <header class="text-center py-8 sm:mt-10">
         <h1 class="text-5xl font-light">{{post.title}}</h1>
       </header>
 
       {{#if post.image}}
-        <img class="block rounded-lg" src={{post.image}} alt={{title}} />
+        <img class="block sm:rounded-lg" src={{post.image}} alt={{title}} />
       {{/if}}
 
-      <div class="bg-white border-b-4 border-grey border-solid p-24 -mt-32 mx-24 relative z-10 text-2xl font-light leading-normal">
+      <div class="bg-white border-b-4 border-grey border-solid p-4 sm:p-8 md:p-16 lg:p-24 sm:-mt-16 md:-mt-32 sm:mx-8 md:mx-12 lg:mx-24 relative z-10 text-base sm:text-xl md:text-2xl font-light leading-normal">
         {{markdown-to-html post.content tagName=""}}
       </div>
 
