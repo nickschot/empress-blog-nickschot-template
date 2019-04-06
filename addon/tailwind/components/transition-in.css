@@ -1,0 +1,29 @@
+.transition-in {
+  @apply .transition;
+
+  transition-delay: 0.3s;
+  transition-duration: 0.5s;
+}
+
+.slide-up {
+  @apply .opacity-0 .transition-in;
+
+  transform: translateY(2rem);
+}
+
+.slide-up--active {
+  @apply .opacity-100;
+
+  transform: translateY(0);
+}
+
+.scale-in {
+  @apply .opacity-0 .transition-in;
+
+  transform: scale(0.95);
+}
+.scale-in--active {
+  @apply .opacity-100;
+
+  transform: scale(1);
+}

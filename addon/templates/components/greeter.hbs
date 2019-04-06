@@ -1,8 +1,10 @@
 <div class="greeter h-90vh flex flex-col justify-center" ...attributes>
   <div class="flex justify-center mb-24">
-    <img src="/images/emberconf_profilepic.jpg" class="block rounded-full border-solid border-8 border-white w-64 h-64">
+    <TransitionIn @type="scale-in">
+      <img src="/images/emberconf_profilepic.jpg" class="block rounded-full border-solid border-8 border-white w-64 h-64">
+    </TransitionIn>
     <div class="flex flex-col justify-center align-center pl-5">
-      <div class="hello hidden-print">
+      <div class="hello">
         <span>Hello<span>.</span></span>
       </div>
       <div class="">

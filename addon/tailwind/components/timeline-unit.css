@@ -26,7 +26,7 @@
 }
 
 .timeline-box {
-  @apply .p-8 .bg-white .border-b-4 .border-grey .border-solid;
+  @apply .relative .p-8 .bg-white .border-b-4 .border-grey .border-solid;
 }
 
 .timeline-box::after {
@@ -42,12 +42,12 @@
 }
 
 .timeline-unit--left .timeline-box::after {
-  right: 0;
+  right: -1.25rem;
   border-left: 1.25rem solid #FFF;
 }
 
 .timeline-unit--right .timeline-box::after {
-  left: 0;
+  left: -1.25rem;
   border-right: 1.25rem solid #FFF;
 }
 
