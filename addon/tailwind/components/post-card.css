@@ -1,0 +1,7 @@
+.post-card {
+  @apply .transition;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
