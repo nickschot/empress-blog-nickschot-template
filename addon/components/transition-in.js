@@ -11,7 +11,7 @@ export default Component.extend(InViewportMixin, {
   init(){
     this._super(...arguments);
 
-    this.set('intersectionThreshold', 1);
+    this.set('intersectionThreshold', 0.75);
   },
 
   didEnterViewport() {

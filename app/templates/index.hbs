@@ -16,80 +16,78 @@
   <TransitionIn @type="slide-up">
     <h2 class="uppercase text-center text-5xl font-light mb-4">~% whoami</h2>
   </TransitionIn>
-  <TransitionIn @type="slide-up">
-    <div class="flex flex-wrap -mx-2 mb-16">
-      <div class="w-full md:w-1/2 p-2">
 
-        <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
-          <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">About</h3>
+  <div class="flex flex-wrap -mx-2 mb-16">
+    <TransitionIn @type="slide-up" class="w-full md:w-1/2 p-2">
+      <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
+        <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">About</h3>
 
-          <div class="flex items-center mt-4 mb-3">
-            <div class="w-1/3 text-right etw-font-bold pr-3">Name:</div>
-            <div class="w-2/3">Nick Schot</div>
+        <div class="flex items-center mt-4 mb-3">
+          <div class="w-1/3 text-right etw-font-bold pr-3">Name:</div>
+          <div class="w-2/3">Nick Schot</div>
+        </div>
+        <div class="flex items-center mb-3">
+          <div class="w-1/3 text-right etw-font-bold pr-3">Education:</div>
+          <div class="w-2/3">Computer Science BSc</div>
+        </div>
+        <div class="flex items-center mb-3">
+          <div class="w-1/3 text-right etw-font-bold pr-3">Occupation:</div>
+          <div class="w-2/3">
+            <ul class="list-reset leading-normal">
+              <li class="border-l-4 border-teal pl-2">Co-founder at <a href="https://webhub.nl" class="fancy-link" target="_blank" rel="noopener">Webhub</a></li>
+            </ul>
           </div>
-          <div class="flex items-center mb-3">
-            <div class="w-1/3 text-right etw-font-bold pr-3">Education:</div>
-            <div class="w-2/3">Computer Science BSc</div>
-          </div>
-          <div class="flex items-center mb-3">
-            <div class="w-1/3 text-right etw-font-bold pr-3">Occupation:</div>
-            <div class="w-2/3">
-              <ul class="list-reset leading-normal">
-                <li class="border-l-4 border-teal pl-2">Co-founder at <a href="https://webhub.nl" class="fancy-link" target="_blank" rel="noopener">Webhub</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <div class="w-1/3 text-right etw-font-bold self-start pr-3">About me:</div>
-            <div class="w-2/3">
-              <ul class="list-reset leading-normal">
-                <li class="border-l-4 border-teal pl-2 mb-4">Passionate <b>web developer</b> from The Netherlands.</li>
-                <li class="border-l-4 border-teal pl-2 my-4">Creator of <b>innovative</b> web applications.</li>
-                <li class="border-l-4 border-teal pl-2 my-4">Frontend/client-side applications are a specialty.</li>
-                <li class="border-l-4 border-teal pl-2 mt-4">Turning coffee into code since 2008.</li>
-              </ul>
-            </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-1/3 text-right etw-font-bold self-start pr-3">About me:</div>
+          <div class="w-2/3">
+            <ul class="list-reset leading-normal">
+              <li class="border-l-4 border-teal pl-2 mb-4">Passionate <b>web developer</b> from The Netherlands.</li>
+              <li class="border-l-4 border-teal pl-2 my-4">Creator of <b>innovative</b> web applications.</li>
+              <li class="border-l-4 border-teal pl-2 my-4">Frontend/client-side applications are a specialty.</li>
+              <li class="border-l-4 border-teal pl-2 mt-4">Turning coffee into code since 2008.</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/2 p-2">
-        <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
-          <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">Skills</h3>
+    </TransitionIn>
+    <TransitionIn @type="slide-up" class="w-full md:w-1/2 p-2">
+      <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
+        <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">Skills</h3>
 
-          <div class="flex mt-4">
-            <div class="w-1/2 text-right pr-2">
-              <h4 class="text-2xl font-light mb-3">Development</h4>
-              <ul class="list-reset leading-normal">
-                <li class="mb-3 border-r-4 border-teal pr-2">HTML5/(S)CSS</li>
-                <li class="mb-3 border-r-4 border-teal pr-2">JavaScript
-                  <ul class="list-reset">
-                    <li><a class="fancy-link" href="http://emberjs.com/" target="_blank" rel="noopener">Ember.js</a></li>
-                    <li><a class="fancy-link" href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
-                    <li><a class="fancy-link" href="http://electron.atom.io/" target="_blank" rel="noopener">Electron</a></li>
-                  </ul>
-                </li>
-                <li class="mb-3 border-r-4 border-teal pr-2">PHP</li>
-                <li class="mb-3 border-r-4 border-teal pr-2">Databases
-                  <ul class="list-reset">
-                    <li><a class="fancy-link" href="https://www.mongodb.com/" target="_blank" rel="noopener">MongoDB</a></li>
-                    <li><a class="fancy-link" href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a>/<a class="fancy-link" href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="w-1/2 pl-2">
-              <h4 class="text-2xl font-light mb-3">Interests</h4>
-              <ul class="list-reset leading-normal">
-                <li class="border-l-4 border-teal pl-2 mb-4">Web application development</li>
-                <li class="border-l-4 border-teal pl-2 mb-4">Smooth & modern user experiences</li>
-                <li class="border-l-4 border-teal pl-2 mb-4">Client side applications</li>
-              </ul>
-            </div>
+        <div class="flex mt-4">
+          <div class="w-1/2 text-right pr-2">
+            <h4 class="text-2xl font-light mb-3">Development</h4>
+            <ul class="list-reset leading-normal">
+              <li class="mb-3 border-r-4 border-teal pr-2">HTML5/(S)CSS</li>
+              <li class="mb-3 border-r-4 border-teal pr-2">JavaScript
+                <ul class="list-reset">
+                  <li><a class="fancy-link" href="http://emberjs.com/" target="_blank" rel="noopener">Ember.js</a></li>
+                  <li><a class="fancy-link" href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+                  <li><a class="fancy-link" href="http://electron.atom.io/" target="_blank" rel="noopener">Electron</a></li>
+                </ul>
+              </li>
+              <li class="mb-3 border-r-4 border-teal pr-2">PHP</li>
+              <li class="mb-3 border-r-4 border-teal pr-2">Databases
+                <ul class="list-reset">
+                  <li><a class="fancy-link" href="https://www.mongodb.com/" target="_blank" rel="noopener">MongoDB</a></li>
+                  <li><a class="fancy-link" href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL</a>/<a class="fancy-link" href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="w-1/2 pl-2">
+            <h4 class="text-2xl font-light mb-3">Interests</h4>
+            <ul class="list-reset leading-normal">
+              <li class="border-l-4 border-teal pl-2 mb-4">Web application development</li>
+              <li class="border-l-4 border-teal pl-2 mb-4">Smooth & modern user experiences</li>
+              <li class="border-l-4 border-teal pl-2 mb-4">Client side applications</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </TransitionIn>
+    </TransitionIn>
+  </div>
 
   <Timeline as |t|>
     <t.Now />
