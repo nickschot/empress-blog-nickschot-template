@@ -7,7 +7,12 @@ export default Component.extend(InViewportMixin, {
   classNameBindings: ['type', 'isVisibleClass'],
 
   type: 'slide-up',
-  intersectionThreshold: 1,
+
+  init(){
+    this._super(...arguments);
+
+    this.set('intersectionThreshold', 1);
+  },
 
   didEnterViewport() {
     this.set('isVisible', true);
