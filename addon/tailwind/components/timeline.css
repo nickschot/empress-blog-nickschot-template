@@ -25,7 +25,7 @@
 }
 
 .timeline-head, .timeline-tail {
-  @apply .relative .border-solid .mx-auto .mb-10 .rounded-full;
+  @apply .relative .border-solid .mb-10 .ml-auto .rounded-full;
 
   height: 2.125rem;
   width: 2.125rem;
@@ -55,7 +55,7 @@
 }
 
 .timeline-now {
-  @apply .relative .mx-auto;
+  @apply .relative .ml-auto .mr-3;
 
   width: 10px;
   height: 3.5rem;
@@ -70,4 +70,10 @@
   height: 2.125rem;
 
   animation: timeline-wobble 5s cubic-bezier(0.860, 0, 0.070, 1.000) infinite;
+}
+
+@screen md {
+  .timeline-head, .timeline-tail, .timeline-now {
+    @apply .mx-auto;
+  }
 }
