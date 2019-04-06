@@ -5,11 +5,23 @@ import { computed } from '@ember/object';
 export default Component.extend({
   layout,
 
-  computedClasses: computed('type', function(){
+  computedClasses: computed('type', 'currentType', function(){
+    const classes = [];
+
     if(this.type === 'right'){
-      return `timeline-unit--right`;
+      classes.push(`timeline-unit--right`);
+
+      if(this.currentType && this.currentType !== 'work'){
+        classes.push(`timeline-unit--hidden`);
+      }
     } else {
-      return `timeline-unit--left`;
+      classes.push(`timeline-unit--left`);
+
+      if(this.currentType && this.currentType !== 'study'){
+        classes.push(`timeline-unit--hidden`);
+      }
     }
+
+    return classes.join(' ');
   })
 });
