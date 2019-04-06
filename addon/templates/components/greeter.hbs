@@ -1,17 +1,14 @@
 <div class="greeter h-90vh flex flex-col justify-center" ...attributes>
   <div class="flex justify-center mb-24">
-    <TransitionIn @type="scale-in">
-      <img src="/images/emberconf_profilepic.jpg" class="block rounded-full border-solid border-8 border-white w-64 h-64">
-    </TransitionIn>
-    <div class="flex flex-col justify-center align-center pl-5">
-      <div class="hello">
-        <span>Hello<span>.</span></span>
-      </div>
-      <div class="">
-        <h1>Nick Schot</h1>
-        <span>Developer</span>
+    <img src="/images/emberconf_profilepic.jpg" class="greeter-img block rounded-full border-solid border-8 border-white w-64 h-64">
+    <div class="flex flex-col justify-center align-center">
+      <div class="greeter-title overflow-hidden py-5 ml-5 pl-5 border-l-4 border-white">
+        <h1 class="text-5xl font-light w-full block">Nick Schot</h1>
+        <span class="text-3xl font-light w-full block">Developer</span>
       </div>
     </div>
   </div>
-  <SocialIcons/>
+  <div class="text-center">
+    <SocialIcons/>
+  </div>
 </div>

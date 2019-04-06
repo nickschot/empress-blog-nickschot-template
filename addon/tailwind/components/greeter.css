@@ -1,6 +1,54 @@
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0) }
+  to { opacity: 1; transform: scale(1) }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-right {
+  from  { opacity: 0; transform: translateX(-100%); }
+  to    { opacity: 1; transform: translateX(0); }
+}
+
 @keyframes fade-up-social-icons {
   from    { visibility: visible; opacity: 0; transform: translateY(1rem); }
   to      { visibility: visible; opacity: 1; transform: translateY(0); }
+}
+
+.greeter-img,
+.greeter-title,
+.greeter-title > *,
+.greeter .social-icon {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.greeter-title {
+  @apply .opacity-0;
+
+  animation-name: fade-in;
+  animation-delay: 0.15s;
+}
+
+.greeter-img {
+  @apply .opacity-0;
+
+  animation-name: scale-in;
+  animation-delay: 0.75s;
+}
+
+.greeter-title > * {
+  @apply .opacity-0;
+
+  animation-name: slide-right;
+  animation-delay: 0.75s;
+}
+.greeter-title > *:last-child {
+  animation-delay: 0.8s;
 }
 
 .greeter .social-icon {
@@ -8,11 +56,9 @@
 
   animation-name: fade-up-social-icons;
   animation-duration: 0.2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
 }
 
-.greeter .social-icon.github    { animation-delay: 5s; }
-.greeter .social-icon.twitter   { animation-delay: 5.1s; }
-.greeter .social-icon.linkedin  { animation-delay: 5.2s; }
+.greeter .social-icon.github    { animation-delay: 1.5s; }
+.greeter .social-icon.twitter   { animation-delay: 1.6s; }
+.greeter .social-icon.linkedin  { animation-delay: 1.7s; }
 
