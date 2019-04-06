@@ -1,0 +1,11 @@
+.greeter-visible .header-main {
+  background: transparent;
+}
+
+.navigation-logo {
+  @apply .transition .opacity-100;
+}
+
+.greeter-visible .navigation-logo {
+  opacity: 0;
+}

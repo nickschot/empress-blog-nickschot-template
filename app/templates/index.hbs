@@ -1,6 +1,7 @@
-<div class="bg-teal text-white flex justify-center -mt-16">
+<div class="bg-teal text-white flex flex-col justify-center -mt-16 pt-16">
 
   <Greeter/>
+  <div class="w-full" style="height: 4rem"></div>
 
   <a class="scroll-down hidden-print">
     <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -17,9 +18,9 @@
   </TransitionIn>
   <TransitionIn @type="slide-up">
     <div class="flex flex-wrap -mx-2 mb-16">
-      <div class="w-full sm:w-1/2 p-2">
+      <div class="w-full md:w-1/2 p-2">
 
-        <div class="h-full p-8 border-b-4 border-solid border-grey bg-white">
+        <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
           <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">About</h3>
 
           <div class="flex items-center mt-4 mb-3">
@@ -51,13 +52,13 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 p-2">
-        <div class="h-full p-8 border-b-4 border-solid border-grey bg-white">
+      <div class="w-full md:w-1/2 p-2">
+        <div class="h-full p-8 md:p-4 lg:p-8 border-b-4 border-solid border-grey bg-white">
           <h3 class="text-center font-light text-4xl border-b border-solid border-grey-light pb-3">Skills</h3>
 
           <div class="flex mt-4">
             <div class="w-1/2 text-right pr-2">
-              <h4 class="text-3xl font-light mb-3">Development</h4>
+              <h4 class="text-2xl font-light mb-3">Development</h4>
               <ul class="list-reset leading-normal">
                 <li class="mb-3 border-r-4 border-teal pr-2">HTML5/(S)CSS</li>
                 <li class="mb-3 border-r-4 border-teal pr-2">JavaScript
@@ -77,7 +78,7 @@
               </ul>
             </div>
             <div class="w-1/2 pl-2">
-              <h4 class="text-3xl font-light mb-3">Interests</h4>
+              <h4 class="text-2xl font-light mb-3">Interests</h4>
               <ul class="list-reset leading-normal">
                 <li class="border-l-4 border-teal pl-2 mb-4">Web application development</li>
                 <li class="border-l-4 border-teal pl-2 mb-4">Smooth & modern user experiences</li>
