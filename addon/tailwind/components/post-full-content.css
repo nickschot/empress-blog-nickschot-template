@@ -33,6 +33,10 @@
   min-width: 100%;
 }
 
+.post-full-content ol, .post-full-content ul {
+  margin-bottom: 1.5em;
+}
+
 .post-full-content li {
   word-break: break-word;
 }
