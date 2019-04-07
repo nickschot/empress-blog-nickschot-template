@@ -19,7 +19,7 @@
       {{/each}}
       {{#if blog.host}}
         <li class="ml-8" role="link">
-          <a href={{concat "https://feedly.com/i/subscription/feed/" (encode blog.host) "/rss.xml"}} title="RSS" target="_blank" rel="noopener"><FaIcon @icon="rss"/></a>
+          <a href={{concat "https://feedly.com/i/subscription/feed/" (encode blog.host) "/rss.xml"}} class={{linkClass}} title="RSS" target="_blank" rel="noopener"><FaIcon @icon="rss"/></a>
         </li>
       {{/if}}
     {{/let}}
