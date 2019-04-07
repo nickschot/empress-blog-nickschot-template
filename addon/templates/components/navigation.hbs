@@ -1,6 +1,9 @@
 <nav class="flex items-center px-2" ...attributes>
   <div class="navigation-logo flex items-center text-white text-lg">
-    <img src={{blog.coverImage}} class="inline-block rounded-full border-2 border-white w-10 h-10 my-2 mr-2">
+
+    {{#if blog.coverImage}}
+      <ResponsiveImage @image={{responsive-image-url blog.coverImage}} class="inline-block rounded-full border-2 border-white w-10 h-10 my-2 mr-2" alt="Profile picture"/>
+    {{/if}}
     Nick Schot
   </div>
 
