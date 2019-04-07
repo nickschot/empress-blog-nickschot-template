@@ -30,6 +30,7 @@
     "ember-composable-helpers": "^2.2.0",
     "ember-in-viewport": "^3.3.0",
     "ember-moment": "^7.8.1",
+    "ember-responsive-image": "^1.0.0-rc.6",
     "ember-set-body-class": "^0.4.2"
   },
   "devDependencies": {
