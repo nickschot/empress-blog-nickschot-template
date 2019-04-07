@@ -6,6 +6,7 @@ import { inject as service } from '@ember/service';
 export default Component.extend(InViewportMixin, {
   layout,
   bodyClass: service(),
+  blog: service(),
 
   name: 'greeter-visible',
 
