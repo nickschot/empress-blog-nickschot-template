@@ -4,7 +4,7 @@ module.exports = {
   name: require('./package').name,
 
   config(env, config) {
-    if(!config || !config['responsive-image']) {
+    if(!config['responsive-image']) {
       return {
         'responsive-image': {
           sourceDir: 'images',
