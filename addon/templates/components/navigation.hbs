@@ -5,7 +5,7 @@
   </div>
 
   <ul class="list-reset flex ml-auto text-lg h-full" role="menu">
-    {{#let "text-teal-lighter hover:text-white no-underline" as |linkClass|}}
+    {{#let "text-white opacity-75 hover:opacity-100 no-underline" as |linkClass|}}
       {{#each blog.navigation as |navigation|}}
         <li class="ml-8 {{if (route-is navigation.route) 'nav-current'}}" role="menuitem">
           {{#if navigation.id}}
