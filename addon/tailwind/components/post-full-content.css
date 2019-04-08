@@ -1,3 +1,15 @@
+@screen sm {
+  img + .post-full-content {
+    @apply .-mt-16;
+  }
+}
+
+@screen md {
+  img + .post-full-content {
+    @apply .-mt-32;
+  }
+}
+
 .post-full-content {
   position: relative;
   min-height: 230px;

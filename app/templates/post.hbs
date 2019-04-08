@@ -18,7 +18,7 @@
         <ResponsiveImage @image={{responsive-image-url post.image}} class="w-full block sm:rounded-lg" alt={{post.title}}/>
       {{/if}}
 
-      <div class="post-full-content bg-white border-b-4 border-grey border-solid p-4 sm:p-8 md:p-16 lg:p-24 sm:-mt-16 md:-mt-32 sm:mx-8 md:mx-12 lg:mx-24 relative z-10 text-base sm:text-xl md:text-2xl font-light leading-normal">
+      <div class="post-full-content bg-white border-b-4 border-grey border-solid p-4 sm:p-8 md:p-16 lg:p-24 sm:mx-8 md:mx-12 lg:mx-24 relative z-10 text-base sm:text-xl md:text-2xl font-light leading-normal">
         {{markdown-to-html post.content tagName=""}}
       </div>
 
