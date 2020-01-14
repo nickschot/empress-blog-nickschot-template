@@ -5,9 +5,11 @@ export default Route.extend({
   classNames: ['index-template', 'home-template'],
   store: service(),
 
-  model() {
-    return this.store.query('content', {
+  async model() {
+    const posts = await this.store.query('content', {
       path: 'content',
     });
+
+    return posts.sortBy('date').reverse();
   },
 });
