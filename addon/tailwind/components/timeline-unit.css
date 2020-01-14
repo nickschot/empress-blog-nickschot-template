@@ -76,29 +76,29 @@
     @apply .w-1/2;
   }
 
-  .timeline-unit--left {
+  .timeline-unit.timeline-unit--left {
     @apply .pr-5;
 
   }
 
-  .timeline-unit--right {
+  .timeline-unit.timeline-unit--right {
     @apply .pl-5 .pr-0 .ml-auto;
   }
 
-  .timeline-unit--left::before {
+  .timeline-unit.timeline-unit--left::before {
     right: -5px;
   }
 
-  .timeline-unit--right::before {
+  .timeline-unit.timeline-unit--right::before {
     right: unset;
     left: -5px;
   }
 
-  .timeline-unit--right .timeline-box {
+  .timeline-unit.timeline-unit--right .timeline-box {
     margin-left: unset;
   }
 
-  .timeline-unit--right .timeline-box::after {
+  .timeline-unit.timeline-unit--right .timeline-box::after {
     left: -1.25rem;
     border-right: 1.25rem solid #FFF;
     border-left: unset;
