@@ -4,7 +4,7 @@ Re-usable card for linking to posts
 <article class="post-card bg-white flex flex-col transition border-grey border-b-4" style="min-height: 27.5rem;" ...attributes>
   {{#link-to 'post' @post.id class="no-underline h-full"}}
     {{#if @post.image}}
-        <div style={{computedStyle}} class="bg-center bg-no-repeat bg-cover h-64 border-4 border-white"></div>
+      <ResponsiveBackground @image={{responsive-image-url @post.image}} class="bg-center bg-no-repeat bg-cover h-64 border-4 border-white"/>
     {{/if}}
 
     <div class="px-6 pt-4">
