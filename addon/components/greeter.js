@@ -2,13 +2,15 @@ import Component from '@ember/component';
 import layout from '../templates/components/greeter';
 import InViewportMixin from 'ember-in-viewport';
 import { inject as service } from '@ember/service';
+import { guidFor } from '@ember/object/internals';
 
 export default Component.extend(InViewportMixin, {
   layout,
   bodyClass: service(),
   blog: service(),
 
-  name: 'greeter-visible',
+  guid: guidFor(this),
+  classNames: ['greeter-visible'],
 
   init(){
     this._super(...arguments);
@@ -17,14 +19,14 @@ export default Component.extend(InViewportMixin, {
 
   willDestroyElement() {
     this._super(...arguments);
-    this.get('bodyClass').deregister(this);
+    this.get('bodyClass').deregister(this.guid, this.classNames);
   },
 
   didEnterViewport(){
-    this.get('bodyClass').register(this);
+    this.get('bodyClass').register(this.guid, this.classNames);
   },
 
   didExitViewport(){
-    this.get('bodyClass').deregister(this);
+    this.get('bodyClass').deregister(this.guid, this.classNames);
   }
 });
