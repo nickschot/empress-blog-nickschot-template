@@ -7,7 +7,7 @@
           <time class="uppercase" datetime="{{date post format="YYYY-MM-DD"}}">{{date post format="D MMMM YYYY"}}</time>
           {{#if post.primaryTag}}
             <span>/</span> {{#link-to 'tag' post.primaryTag class="inline-block bg-grey-lighter hover:bg-teal rounded-full px-2 text-sm font-semibold text-grey-darker no-underline hover:text-teal-lighter"}}
-              #{{post.primaryTag}}
+              #{{post.primaryTag.id}}
             {{/link-to}}
           {{/if}}
         </section>

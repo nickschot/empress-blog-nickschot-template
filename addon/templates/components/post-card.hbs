@@ -18,7 +18,7 @@ Re-usable card for linking to posts
   <div class="px-6 py-4 mt-auto">
     {{#each @post.tags as |tag|}}
       {{#link-to 'tag' tag class="inline-block bg-grey-lighter hover:bg-teal rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2 no-underline hover:text-teal-lighter "}}
-        #{{tag}}
+        #{{tag.id}}
       {{/link-to}}
     {{/each}}
   </div>
