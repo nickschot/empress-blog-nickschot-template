@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  classNames: ['index-template', 'home-template'],
+  //classNames: ['index-template', 'home-template'],
 
   model(){
     return {};

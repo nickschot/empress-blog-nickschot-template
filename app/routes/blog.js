@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
-  classNames: ['index-template', 'home-template'],
+  //classNames: ['index-template', 'home-template'],
   store: service(),
 
   async model() {
