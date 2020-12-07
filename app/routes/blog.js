@@ -1,15 +1,5 @@
-import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
+import IndexRoute from 'empress-blog/routes/index';
 
-export default Route.extend({
-  //classNames: ['index-template', 'home-template'],
-  store: service(),
+export default class BlogRoute extends IndexRoute {
 
-  async model() {
-    const posts = await this.store.query('content', {
-      path: 'content',
-    });
-
-    return posts.sortBy('date').reverse();
-  },
-});
+};
