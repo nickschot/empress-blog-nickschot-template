@@ -27,13 +27,15 @@
     "@fortawesome/ember-fontawesome": "^0.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "dayjs": "^1.9.7",
+    "ember-auto-import": "^1.8.0",
     "ember-cli-babel": "^7.23.0",
     "ember-cli-htmlbars": "^5.3.1",
     "ember-cli-tailwind": "^0.7.0",
     "ember-in-viewport": "^3.8.0",
     "ember-set-body-class": "^1.0.2",
-    "empress-blog-ghost-helpers": "^1.0.0",
     "recast": "^0.20.4",
+    "sharp": "~0.25.4",
     "walk-sync": "^2.2.0",
     "yaml-front-matter": "^4.0.0"
   },
@@ -43,7 +45,6 @@
     "@glimmer/tracking": "^1.0.2",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^1.6.0",
     "ember-cli": "~3.22.0",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-fastboot": "^2.2.3",
@@ -86,9 +87,6 @@
     "after": [
       "empress-blog"
     ]
-  },
-  "resolutions": {
-    "sharp": "^0.26.3"
   },
   "volta": {
     "node": "14.15.1"
