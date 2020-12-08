@@ -149,37 +149,13 @@ Usage (In Ghost editor):
   margin-bottom: 0;
 }
 
-.post-full-content code {
-  @apply .bg-grey-light;
-  padding: 0 5px 2px;
-  font-size: 0.8em;
-  line-height: 1em;
-  font-weight: 400!important;
-  border-radius: 3px;
-}
-
-.post-full-content p code {
-  word-break: break-all;
-}
-
 .post-full-content pre {
-  @apply .bg-grey-darkest .text-grey-light .border .border-grey-darkest;
-  overflow-x: auto;
-  margin: 1.5em 0 3em;
-  padding: 20px;
-  max-width: 100%;
-  font-size: 1.3rem;
-  line-height: 1em;
-  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
-.post-full-content pre code {
-  padding: 0;
-  background: transparent;
-}
-
-.post-full-content pre code :not(span) {
-  color: inherit;
+.post-full-content pre code .block {
+  display: unset;
 }
 
 .post-full-content .fluid-width-video-wrapper {
