@@ -152,6 +152,7 @@ Usage (In Ghost editor):
 .post-full-content pre {
   font-size: 1rem;
   line-height: 1rem;
+  margin: 1.5em 0 3em;
 }
 
 .post-full-content pre code .block {
